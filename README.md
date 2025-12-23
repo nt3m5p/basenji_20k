@@ -58,6 +58,21 @@ Results are written to `output/` as an HDF5 file containing per-variant regulato
 
 ---
 
+## Project Structure
+
+```bash
+.
+├── bin/                  # Executable scripts (bam_cov, train)
+├── basenji/              # Core model, trainer, loss functions
+├── model/                # Trained models and parameter files
+├── input/                # Genome FASTA, VCFs
+├── output/               # SAD results (HDF5)
+├── prespecified.yml      # Conda environment
+├── setup.py
+└── README.md
+```
+---
+
 ## Notes
 
 - Model trained on **three rice cultivars**
